@@ -1,0 +1,147 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0077cc;
+  padding: 15px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#theme-toggle {
+  padding: 8px 15px;
+  background-color: white;
+  color: #0077cc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* News Sections */
+.news-section {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.news-section h2 {
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+/* News Grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.news-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.news-card:hover {
+  transform: scale(1.02);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-card h3 {
+  padding: 10px;
+}
+
+/* Breaking and Tech News Lists */
+#breaking-list, #tech-list {
+  list-style: square;
+  margin-left: 20px;
+}
+
+/* Add News Section */
+#add-news {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#news-input {
+  padding: 8px;
+  width: 50%;
+  margin-right: 5px;
+}
+
+#add-btn {
+  padding: 8px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode header {
+  background-color: #222;
+}
+
+.dark-mode .news-card {
+  background-color: #1e1e1e;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #0077cc;
+  color: white;
+}
